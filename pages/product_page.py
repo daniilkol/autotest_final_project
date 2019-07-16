@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 class ProductPage (BasePage):
 
     def should_be_add_button (self):
-        assert self.is_element_present(*ProductPageLocators.ADD_BUTTON), "Login link is not presented"
+        assert self.is_element_present(*ProductPageLocators.ADD_BUTTON), "Add button is not presented"
 
     def go_to_alert_after_add_button(self):
         link = self.browser.find_element(*ProductPageLocators.ADD_BUTTON)
